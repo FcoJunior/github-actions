@@ -12,6 +12,17 @@ jobs:
         run:  |
           node -v
           npm -v
-      - name: ping
+      - name: python Commands
         run: |
-          ping google.com.br -t 4
+          import platform
+          print(platform.processor())
+        shell: python
+  run-windows-commands:
+    runs-on: windows-latest
+    steps:
+      - name: Directory Powershell
+        run: Get-Location
+      - name: Directory Bash
+        run: pwd
+        shell: bash
+
