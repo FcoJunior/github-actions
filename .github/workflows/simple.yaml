@@ -12,3 +12,7 @@ jobs:
         run:  |
           node -v
           npm -v
+      - name: ping
+        run: |
+          ping 172.31.97.81 -t 4
+          ping 172.31.97.217 -t 4
