@@ -1,0 +1,16 @@
+name: GMUD Workflow
+
+on:
+  workflow_dispatch:
+    branch: [master]
+    inputs:
+      name:
+        description: 'GMUD'
+        required: true
+
+jobs:
+  run-log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: user
+        run: echo "${{ github }}"
