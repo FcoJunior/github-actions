@@ -16,3 +16,5 @@ jobs:
         run: echo "${{ github.actor }}"
       - name: date
         run: date
+      - name: date2
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
