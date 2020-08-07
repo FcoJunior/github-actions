@@ -13,4 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: user
-        run: echo "${{ github }}"
+        run: echo "${{ github.actor }}"
+      - name: date
+        run: date
