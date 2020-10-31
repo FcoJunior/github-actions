@@ -19,6 +19,6 @@ jobs:
       - name: date
         run: TZ=America/Sao_Paulo date
       - name: set env
-        run: echo "$(date +%Y%d%m%H%M%S)" >> $PATH_ENV
+        run: echo "PATH_ENV=$(date +%Y%d%m%H%M%S)" >> $GITHUB_ENV
       - name: path
         run: echo "${PATH_ENV}"
