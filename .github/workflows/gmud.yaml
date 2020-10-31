@@ -8,7 +8,7 @@ on:
         description: 'GMUD'
         required: true
 env:
-  PATH_ENV: ${{ date +%Y }}
+  PATH_ENV: env
 
 jobs:
   run-log:
@@ -18,5 +18,7 @@ jobs:
         run: echo "${{ github.actor }}"
       - name: date
         run: TZ=America/Sao_Paulo date
+      - name: set env
+        run: echo "$(date +%y) >> $PATH_ENV"
       - name: path
         run: echo "${PATH_ENV}"
