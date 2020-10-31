@@ -21,4 +21,8 @@ jobs:
       - name: set env
         run: echo "PATH_ENV=$(date +%Y%d%m%H%M%S)" >> $GITHUB_ENV
       - name: path
-        run: echo "${PATH_ENV}"
+        run: |
+          mkdir "${PATH_ENV}"
+          ls
+          cd "${PATH_ENV}"
+          ls
