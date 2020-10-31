@@ -8,7 +8,7 @@ on:
         description: 'GMUD'
         required: true
 env:
-  PATH_ENV: date +%Y
+  PATH_ENV: "$(date +%Y)"
 
 jobs:
   run-log:
