@@ -26,3 +26,4 @@ jobs:
           ls
           cd "${PATH_ENV}"
           mkdir teste
+          ls
