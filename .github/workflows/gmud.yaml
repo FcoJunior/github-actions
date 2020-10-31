@@ -7,8 +7,8 @@ on:
       name:
         description: 'GMUD'
         required: true
-env:
-  PATH_ENV: env
+# env:
+#   PATH_ENV: env
 
 jobs:
   run-log:
