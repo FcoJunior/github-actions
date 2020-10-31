@@ -25,4 +25,4 @@ jobs:
           mkdir "${PATH_ENV}"
           ls
           cd "${PATH_ENV}"
-          ls
+          mkdir teste
